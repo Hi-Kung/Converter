@@ -40,7 +40,8 @@ class HKZConverterBaseVC: UIViewController, UITextFieldDelegate, UIScrollViewDel
         textField.delegate = self
         textField.frame = CGRect(x: 10.0, y: (headerH-textfieldH)/2, width: kScreenWith-20.0, height: textfieldH)
         textField.placeholder = "please input number";
-        textField.keyboardType = .numberPad
+//        textField.keyboardType = .numberPad
+        textField.inputView = keyboard;
         
         let header = UIView(frame: CGRect(x: 0, y: 0, width: kScreenWith, height: headerH))
         header.addSubview(textField)
@@ -53,6 +54,9 @@ class HKZConverterBaseVC: UIViewController, UITextFieldDelegate, UIScrollViewDel
         models = [number1Model!,number2Model!,number3Model!]
 
         mainTableView.reloadData()
+        
+
+        
     }
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -62,7 +66,7 @@ class HKZConverterBaseVC: UIViewController, UITextFieldDelegate, UIScrollViewDel
     // MARK:UITextFieldDelegate
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        var number = textField.text?.appending(string)
+        let number = textField.text?.appending(string)
         let number1Model = HKZNumberModel(name: "八", number: number!)
         let number2Model = HKZNumberModel(name: "十", number: number!)
         let number3Model = HKZNumberModel(name: "十六", number: number!)
@@ -70,6 +74,8 @@ class HKZConverterBaseVC: UIViewController, UITextFieldDelegate, UIScrollViewDel
         mainTableView.reloadData()
         return true
     }
+
+    
     
     // MARK:UITableViewDelegate
     
