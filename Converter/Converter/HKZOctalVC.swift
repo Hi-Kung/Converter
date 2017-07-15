@@ -2,7 +2,7 @@
 //  HKZOctalVC.swift
 //  Converter
 //
-//  Created by 赵香港 on 17/6/11.
+//  Created by  on 17/6/11.
 //  Copyright © 2017年 HK. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  HKZKeyboard.swift
 //  Converter
 //
-//  Created by 赵香港 on 17/7/6.
+//  Created by  on 17/7/6.
 //  Copyright © 2017年 HK. All rights reserved.
 //
 
@@ -28,8 +28,8 @@ class HKZKeyboard: UIView {
         
         numbers = [["7","8","9","A","B"],
                    ["4","5","6","C","D"],
-                   ["1","2","3","A","B"],
-                   ["0","","","清空","x"]];
+                   ["1","2","3","E","F"],
+                   ["0","","收","清空","x"]];
         
         for i in 0..<numbers.count {
             for j in 0..<numbers[i].count {
