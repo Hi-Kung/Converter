@@ -8,8 +8,6 @@
 
 import UIKit
 
-var keyboard = HKZKeyboard()
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -21,10 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let tabbar = HKZTabBarVC()
         window?.rootViewController = tabbar
-        
-        keyboard = HKZKeyboard(frame: CGRect(x: 0, y: kScreenHeight, width: kScreenWith, height: kScreenWith))
-        
-        window?.addSubview(keyboard)
         
         return true
     }

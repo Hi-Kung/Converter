@@ -13,19 +13,23 @@ class HKZTabBarVC: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let vc1 = HKZBinaryVC()
+        let vc1 = HKZConverterBaseVC()
+        vc1.baseNumType = BaseNumberType.binary
         let nav1 = UINavigationController(rootViewController: vc1)
         nav1.tabBarItem = UITabBarItem(title: "二进制", image: nil, selectedImage: nil)
         
-        let vc2 = HKZOctalVC()
+        let vc2 = HKZConverterBaseVC()
+        vc2.baseNumType = BaseNumberType.octal
         let nav2 = UINavigationController(rootViewController: vc2)
         nav2.tabBarItem = UITabBarItem(title: "八进制", image: nil, selectedImage: nil)
         
-        let vc3 = HKZDecimalVC()
+        let vc3 = HKZConverterBaseVC()
+        vc3.baseNumType = BaseNumberType.decimal
         let nav3 = UINavigationController(rootViewController: vc3)
         nav3.tabBarItem = UITabBarItem(title: "十进制", image: nil, selectedImage: nil)
         
-        let vc4 = HKZHexadecimalVC()
+        let vc4 = HKZConverterBaseVC()
+        vc4.baseNumType = BaseNumberType.hexadecimal
         let nav4 = UINavigationController(rootViewController: vc4)
         nav4.tabBarItem = UITabBarItem(title: "十六进制", image: nil, selectedImage: nil)
 

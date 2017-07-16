@@ -12,7 +12,7 @@ class HKZNumberModel {
     var name:String
     var number: String
     init?(name:String, number:String) {
-        if name.isEmpty || number.isEmpty {
+        if name.isEmpty {
             return nil;
         }
         self.name = name

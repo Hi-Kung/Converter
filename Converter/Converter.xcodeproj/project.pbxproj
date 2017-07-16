@@ -14,10 +14,6 @@
 		4609848A1EED0E5B0052F99A /* ConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460984891EED0E5B0052F99A /* ConverterTests.swift */; };
 		460984951EED0E5B0052F99A /* ConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460984941EED0E5B0052F99A /* ConverterUITests.swift */; };
 		460984A51EED0EFE0052F99A /* HKZTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460984A41EED0EFE0052F99A /* HKZTabBarVC.swift */; };
-		460984A71EED0F590052F99A /* HKZBinaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460984A61EED0F590052F99A /* HKZBinaryVC.swift */; };
-		460984A91EED0FFF0052F99A /* HKZOctalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460984A81EED0FFF0052F99A /* HKZOctalVC.swift */; };
-		460984AB1EED10170052F99A /* HKZDecimalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460984AA1EED10170052F99A /* HKZDecimalVC.swift */; };
-		460984AD1EED103C0052F99A /* HKZHexadecimalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460984AC1EED103C0052F99A /* HKZHexadecimalVC.swift */; };
 		460984AF1EED11290052F99A /* HKZConverterBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460984AE1EED11290052F99A /* HKZConverterBaseVC.swift */; };
 		464997A91F0E7D9F00F50352 /* HKZKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464997A81F0E7D9F00F50352 /* HKZKeyboard.swift */; };
 		46BF93D51EED2E2900A17E3F /* HKZNumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BF93D41EED2E2900A17E3F /* HKZNumberCell.swift */; };
@@ -55,10 +51,6 @@
 		460984941EED0E5B0052F99A /* ConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterUITests.swift; sourceTree = "<group>"; };
 		460984961EED0E5B0052F99A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		460984A41EED0EFE0052F99A /* HKZTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKZTabBarVC.swift; sourceTree = "<group>"; };
-		460984A61EED0F590052F99A /* HKZBinaryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKZBinaryVC.swift; sourceTree = "<group>"; };
-		460984A81EED0FFF0052F99A /* HKZOctalVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKZOctalVC.swift; sourceTree = "<group>"; };
-		460984AA1EED10170052F99A /* HKZDecimalVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKZDecimalVC.swift; sourceTree = "<group>"; };
-		460984AC1EED103C0052F99A /* HKZHexadecimalVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKZHexadecimalVC.swift; sourceTree = "<group>"; };
 		460984AE1EED11290052F99A /* HKZConverterBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKZConverterBaseVC.swift; sourceTree = "<group>"; };
 		464997A81F0E7D9F00F50352 /* HKZKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKZKeyboard.swift; sourceTree = "<group>"; };
 		46BF93D41EED2E2900A17E3F /* HKZNumberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKZNumberCell.swift; sourceTree = "<group>"; };
@@ -116,10 +108,6 @@
 				460984721EED0E5B0052F99A /* AppDelegate.swift */,
 				460984A41EED0EFE0052F99A /* HKZTabBarVC.swift */,
 				460984AE1EED11290052F99A /* HKZConverterBaseVC.swift */,
-				460984A61EED0F590052F99A /* HKZBinaryVC.swift */,
-				460984A81EED0FFF0052F99A /* HKZOctalVC.swift */,
-				460984AA1EED10170052F99A /* HKZDecimalVC.swift */,
-				460984AC1EED103C0052F99A /* HKZHexadecimalVC.swift */,
 				46BF93D41EED2E2900A17E3F /* HKZNumberCell.swift */,
 				46BF93D61EED30F600A17E3F /* HKZNumberModel.swift */,
 				464997A81F0E7D9F00F50352 /* HKZKeyboard.swift */,
@@ -284,15 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				46BF93D71EED30F700A17E3F /* HKZNumberModel.swift in Sources */,
-				460984A71EED0F590052F99A /* HKZBinaryVC.swift in Sources */,
-				460984A91EED0FFF0052F99A /* HKZOctalVC.swift in Sources */,
-				460984AB1EED10170052F99A /* HKZDecimalVC.swift in Sources */,
 				460984731EED0E5B0052F99A /* AppDelegate.swift in Sources */,
 				46BF93D51EED2E2900A17E3F /* HKZNumberCell.swift in Sources */,
 				464997A91F0E7D9F00F50352 /* HKZKeyboard.swift in Sources */,
 				460984A51EED0EFE0052F99A /* HKZTabBarVC.swift in Sources */,
 				460984AF1EED11290052F99A /* HKZConverterBaseVC.swift in Sources */,
-				460984AD1EED103C0052F99A /* HKZHexadecimalVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
