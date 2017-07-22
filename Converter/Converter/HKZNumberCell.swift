@@ -29,7 +29,9 @@ class HKZNumberCell: UITableViewCell {
         let cellH:CGFloat = 60, nameW:CGFloat = 50, nameLeft:CGFloat = 10
         
         leftNameLabel.frame = CGRect(x: nameLeft, y: 0, width: nameW, height: cellH)
-        numberLabel.frame = CGRect(x: nameLeft+nameW, y: 0, width: kScreenWith-nameLeft*2, height: cellH)
+        numberLabel.frame = CGRect(x: nameLeft+nameW, y: 0, width: kScreenWith-nameLeft*2-nameW, height: cellH)
+        numberLabel.numberOfLines = 2
+        numberLabel.adjustsFontSizeToFitWidth = true
         self.contentView.addSubview(leftNameLabel)
         self.contentView.addSubview(numberLabel)
     }

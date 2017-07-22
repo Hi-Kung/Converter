@@ -103,7 +103,9 @@ class HKZKeyboard: UIView {
                 btn.setTitleColor(UIColor.black, for: .normal)
                 btn.setTitleColor(UIColor.blue, for: .highlighted)
                 btn.layer.borderWidth = 0.5;
-                btn.layer.borderColor = UIColor.blue.cgColor
+                let color = UIColor(red: 248.0/255.0, green: 248.0/255.0, blue: 255.0/255.0, alpha: 1) // ghostWhite
+                btn.layer.masksToBounds = false
+                btn.layer.borderColor = color.cgColor
                 btn.titleLabel?.font = UIFont.systemFont(ofSize: 20)
                 btn.addTarget(self, action:#selector(btnClicked(btn:)), for: .touchUpInside)
                 
