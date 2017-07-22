@@ -99,7 +99,10 @@ class HKZKeyboard: UIView {
                 let btn:UIButton = UIButton()
                 btn.frame = CGRect(x: left, y: top, width: width, height: height)
                 btn.setTitle(numbers[i][j], for:UIControlState.normal)
-                btn.backgroundColor = UIColor(red: 225.0, green: 225.0, blue: 225.0, alpha: 1.0)
+                btn.backgroundColor = UIColor.white
+                
+                btn.setBackgroundImage(getImageWithColor(color: UIColor(red: 230/255.0, green: 230/255.0, blue: 230/255.0, alpha: 1)), for: UIControlState.highlighted)
+                    
                 btn.setTitleColor(UIColor.black, for: .normal)
                 btn.setTitleColor(UIColor.blue, for: .highlighted)
                 btn.layer.borderWidth = 0.5;
@@ -161,4 +164,17 @@ class HKZKeyboard: UIView {
         
     }
     
+    
+    func getImageWithColor(color:UIColor) -> UIImage? {
+        let rect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0)
+        UIGraphicsBeginImageContext(rect.size)
+        let context = UIGraphicsGetCurrentContext()
+        context?.setFillColor(color.cgColor)
+        context?.fill(rect)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image ?? nil
+    }
+    
 }
+
